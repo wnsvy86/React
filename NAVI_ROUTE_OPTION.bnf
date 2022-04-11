@@ -1,0 +1,23 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+!import <BACK>;
+!import <EXIT>;
+!import <HELP>;
+!import <FASTER_TIME>;
+!import <SHORTER_DISTANCE>;
+
+
+!start <COMMAND>;
+
+<COMMAND>:
+
+<PART>;
+
+<PART>:
+
+<BACK>|
+<EXIT>|
+<HELP>|
+<FASTER_TIME>|
+<SHORTER_DISTANCE>;
+

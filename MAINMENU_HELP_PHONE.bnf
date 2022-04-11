@@ -1,0 +1,28 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+
+!import <BACK>;
+!import <EXIT>;
+!import <NEXT_PAGE>;
+!import <PREVIOUS_PAGE>;
+!import <PHONE_CALL>;
+//!import <PHONE_DIAL_NUMBER>;
+//!import <VAD_NUMBER>;
+!import <PHONE_CALL_HISTORY>;
+!import <PHONE_REDIAL>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+<PART>;
+
+<PART>:
+<BACK>|
+<EXIT>|
+<NEXT_PAGE>|
+<PREVIOUS_PAGE>|
+<PHONE_CALL>|
+//<PHONE_DIAL_NUMBER>|
+//<VAD_NUMBER>|
+<PHONE_CALL_HISTORY>|
+<PHONE_REDIAL>;

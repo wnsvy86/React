@@ -1,0 +1,26 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+
+!import <BACK>;
+!import <EXIT>;
+!import <HELP>;
+!import <NEXT_PAGE>;
+!import <PREVIOUS_PAGE>;
+!import <PRESET_NUMBER110>;
+!import <PRESET_NUMBER112>;
+!import <PRESET_NUMBER140>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+<PART>;
+
+<PART>:
+<BACK>|
+<EXIT>|
+<HELP>|
+<NEXT_PAGE>|
+<PREVIOUS_PAGE>|
+<PRESET_NUMBER110>|
+<PRESET_NUMBER112>|
+<PRESET_NUMBER140>;
