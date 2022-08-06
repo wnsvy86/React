@@ -1,0 +1,48 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+
+!import <CD_PLAY_TRACK>;
+!import <BACK>;
+!import <EXIT>;
+!import <NEXT_PAGE>;
+!import <PREVIOUS_PAGE>;
+!import <MUSIC>;
+!import <IPOD>;
+!import <BT_AUDIO>;
+!import <AUX>;
+!import <MY_MUSIC>;
+!import <USB>;
+!import <PLAY>;
+!import <PAUSE>;
+!import <SHUFFLE>;
+!import <SHUFFLE_OFF>;
+!import <REPEAT>;
+!import <REPEAT_OFF>;
+!import <VIDEO>;
+!import <IMAGE>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+<PART>;
+
+<PART>:
+<CD_PLAY_TRACK>|
+<BACK>|
+<EXIT>|
+<NEXT_PAGE>|
+<PREVIOUS_PAGE>|
+<MUSIC>|
+<IPOD>|
+<BT_AUDIO>|
+<AUX>|
+<MY_MUSIC>|
+<USB>|
+<PLAY>|
+<PAUSE>|
+<SHUFFLE>|
+<SHUFFLE_OFF>|
+<REPEAT>|
+<REPEAT_OFF>|
+<VIDEO>|
+<IMAGE>;

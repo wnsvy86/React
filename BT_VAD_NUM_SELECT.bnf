@@ -1,0 +1,26 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+
+!import <BACK>; 
+!import <EXIT>;
+!import <HELP>;
+!import <MANUAL_INPUT>;
+!import <VAD_NUM_SLOT>;
+!import <PHONE_DIAL>;
+//!import <PHONE_CORRECTION>;
+//!import <PHONE_DELETE>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+<PART>;
+
+<PART>:
+<BACK>| 
+<EXIT>|
+<HELP>|
+<MANUAL_INPUT>|
+<VAD_NUM_SLOT>|
+<PHONE_DIAL>;
+//<PHONE_CORRECTION>|
+//<PHONE_DELETE>;

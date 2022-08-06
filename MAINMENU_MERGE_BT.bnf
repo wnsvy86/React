@@ -1,0 +1,42 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+
+!slot <Field_1>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+<PART>;
+
+<Field_1>:
+<VOID>;
+
+<NAME>:
+<Field_1>;
+
+<PART>:
+<VAD_CALL>|
+<VAD_MOBILE>|
+<VAD_OFFICE>|
+<VAD_HOME>|
+<VAD_OTHER>;
+
+
+<VAD_CALL>:
+<NAME> 에게 (전화 !id(103000) | 전화걸기 !id(103000) | 전화하기 !id(103000)) |
+(전화걸기 !id(103000) | 전화하기 !id(103000)) <NAME> |
+<NAME> (전화 !id(103000) | 전화걸기 !id(103000) | 전화하기 !id(103000)) ;
+
+<VAD_MOBILE>:
+<NAME> 휴대폰에 !id(104000) (전화 | 전화걸기 | 전화하기) |
+<NAME> 핸드폰에 !id(104000) (전화 | 전화걸기 | 전화하기) ;
+
+<VAD_OFFICE>:
+<NAME> 회사에 !id(105000) (전화 | 전화걸기 | 전화하기) |
+<NAME> 사무실에 !id(105000) (전화 | 전화걸기 | 전화하기) ;
+
+<VAD_HOME>:
+<NAME> 집에 !id(106000) (전화 | 전화걸기 | 전화하기) ;
+
+<VAD_OTHER>:
+<NAME> 기타에 !id(107000) (전화 | 전화걸기 | 전화하기) ;
