@@ -16,5 +16,9 @@
 <BACK>|
 <EXIT>|
 <HELP>|
+<<<<<<< HEAD
 <YES>|
 <NO>;
+=======
+<YES>;
+>>>>>>> 0e095e2df91f72c28efc4ef495c2491637990c77
