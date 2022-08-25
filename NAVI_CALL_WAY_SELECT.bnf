@@ -1,0 +1,26 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+!import <BACK>;
+!import <EXIT>;
+!import <HELP>;
+!import <NAVI_YES>;
+!import <NAVI_NO>;
+!import <NAVI_DIAL>;
+!import <ADD_WAYPOINT>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+
+<PART>;
+
+<PART>:
+
+<BACK>|
+<EXIT>|
+<HELP>|
+<NAVI_YES>|
+<NAVI_NO>|
+<NAVI_DIAL>|
+<ADD_WAYPOINT>;
+

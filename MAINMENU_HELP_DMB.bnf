@@ -1,0 +1,28 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+
+!import <BACK>;
+!import <EXIT>;
+!import <NEXT_PAGE>;
+!import <PREVIOUS_PAGE>;
+!import <RADIO_AST>;
+!import <DMB_AST>;
+!import <DMB>;
+!import <DMB_STATION>;
+!import <STATION_LIST>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+<PART>;
+
+<PART>:
+<BACK>|
+<EXIT>|
+<NEXT_PAGE>|
+<PREVIOUS_PAGE>|
+<RADIO_AST>|
+<DMB_AST>|
+<DMB>|
+<DMB_STATION>|
+<STATION_LIST>;

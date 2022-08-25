@@ -1,0 +1,18 @@
+﻿#BNF+EM V1.1;
+!grammar COMMAND;
+
+!import <BACK>;
+!import <EXIT>;
+!import <HELP>;
+!import <FM_FREQ_SLOT>;
+
+!start <COMMAND>;
+
+<COMMAND>:
+<PART>;
+
+<PART>:
+<BACK>|
+<EXIT>|
+<HELP>|
+<FM_FREQ_SLOT>;
