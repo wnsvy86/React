@@ -3,7 +3,6 @@
 
 !import <BACK>; 
 !import <EXIT>;
-!import <HELP>;
 !import <LINE_NUMBER14>;
 !import <NEXT_PAGE>;
 !import <PREVIOUS_PAGE>;
@@ -16,7 +15,6 @@
 <PART>:
 <BACK>| 
 <EXIT>|
-<HELP>|
 <LINE_NUMBER14>|
 <NEXT_PAGE>|
-
+<PREVIOUS_PAGE>;

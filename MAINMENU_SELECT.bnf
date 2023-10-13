@@ -16,4 +16,5 @@
 <BACK>|
 <EXIT>|
 <HELP>|
-<YES>;
+<YES>|
+<NO>;
