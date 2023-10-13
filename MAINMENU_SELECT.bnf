@@ -15,5 +15,6 @@
 <PART>:
 <BACK>|
 <EXIT>|
-<HELP>;
-<HELP>;
+<HELP>|
+<YES>|
+<NO>;
